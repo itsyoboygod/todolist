@@ -1,0 +1,229 @@
+.todoList{
+    display: flex;
+    flex-direction: column;
+    /* background-color: wheat; */
+}
+
+.title-todo{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    width: inherit;
+    background-color: lightgray;
+    font-size: 2rem;
+    font-family: monospace;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.title-todo h1{
+    margin: 2px;
+    padding: 2px;
+}
+
+.todo-body{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    padding: 5px;
+    width: inherit;
+    background-color: lightgray;
+    font-size: 2rem;
+    font-family: monospace;
+    border: solid 1px black;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.todo-body-title h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+    width: inherit;
+    padding: 0;
+    max-height: 300px;
+    margin: 0;
+    overflow-y: scroll;
+    position: relative;
+}
+
+ul::after{
+    /* content: "Your Tasks will appear here"; */
+    font-size: 20px;
+    opacity: .2;
+    padding: 0px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    width: inherit;
+}
+
+li p{
+    margin: 2px;
+    padding: 2px;
+    font-size: 1rem;
+}
+
+ li:nth-child(even) {
+    background: darkgrey; 
+}
+
+ li:nth-child(odd) {
+    background: lightgray;
+} 
+
+.addTask {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    padding: 5px;
+    width: inherit;
+    /* flex-wrap: wrap; */
+    background: transparent;
+    border: solid 1px;
+    border-radius: 10px;
+}
+.addTask-input{
+    display: flex;
+    width: 100%;
+
+}
+
+.addTask input{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 2rem;
+    /* border: solid 1px black; */
+    border: none;
+    /* border-radius: 10px; */
+    min-width: 80%;
+    max-width: -webkit-fill-available;
+    background: transparent;
+}
+
+
+.addTask input:focus{
+ outline: none;
+}
+
+.addTask button{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding:5px;
+    font-size: 2rem;
+    /* border: solid 1px black; */
+    border: none;
+    /* border-radius: 10px; */
+    align-items: center;
+    transition: .2s;
+    background: transparent;
+
+}
+
+.addTask button:hover{
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+}
+
+.todo{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    width: inherit;
+    font-family: monospace;
+    /* border: solid 1px black; */
+    border-radius: 10px;
+    flex-direction: column;
+
+}
+
+.row-task{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+    width: inherit;
+    font-size: 1rem;
+    font-family: monospace;
+    border: solid 1px black;
+    border-radius: 10px;
+    flex-direction: row;   
+    align-items: center;
+    line-break: anywhere;
+}
+
+
+.task-done{
+    background-color: lightgreen !important;
+}
+
+.task-done p:last-child{
+    text-decoration-line: line-through;
+}
+
+
+.row-task h1{
+    margin: 2px;
+    padding: 2px;
+}
+
+.task-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.task-info :first-child{
+    margin: 2px !important;
+    padding: 2px !important;
+    align-self: center;
+    min-width: 30px;
+    text-align: center;
+}
+
+.todo button{
+    height: 45px;
+    width: 45px;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    transition: .2s;
+
+}
+
+.todo button:hover{
+    opacity: .5;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.todo button:first-child{
+    color: tomato;
+}
+
+.todo button:last-child{
+    color: green;
+}
+
+.btns-del-check{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
