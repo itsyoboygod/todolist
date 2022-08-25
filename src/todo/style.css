@@ -85,7 +85,7 @@ li p{
     display: flex;
     justify-content: space-between;
     margin: 0 15px;
-    padding: 5px;
+    padding: 0;
     width: inherit;
     /* flex-wrap: wrap; */
     background: transparent;
@@ -116,6 +116,10 @@ li p{
 
 .addTask input:focus{
  outline: none;
+}
+
+.addTask-btn-add{
+    border-left: solid 1px ;
 }
 
 .addTask button{
