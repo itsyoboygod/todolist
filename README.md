@@ -1,3 +1,16 @@
+# This is a simple todo list with React JS
+
+### You just simply write you task and press <code>Add+</code>
+
+![todolist_md](https://github.com/itsyoboygod/todolist/assets/58955082/a117154a-f7a2-4fa3-8733-8d0690911ebf) 
+
+### After the task been created, it will be stacked in a list bellow. And you can check or delete the task
+## Check task
+![checked_task](https://github.com/itsyoboygod/todolist/assets/58955082/d5dd8847-3963-488d-a3f1-3a324868210a)
+## Delete task
+![del_task](https://github.com/itsyoboygod/todolist/assets/58955082/8845e3af-1a15-4a9b-933e-7c9d03d536da)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
